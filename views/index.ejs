@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/mystyle.css' />
+    <link rel='stylesheet' href='/stylesheets/animate.min.css' />
+    <link rel='stylesheet' href='/stylesheets/my_animation.css' />
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/my.js"></script>
+  </head>
+  <body>
+  <div id="pageOne">
+    <!--左边侧边栏-->
+    <%include left.ejs%>
+    <!--头部-->
+    <%include header.ejs%>
+    <!--内容区块-->
+    <div class="content">
+      <!--<h4 class="title">-->
+        <!--<span class="titleName">记账凭证</span>-->
+        <!--<span class="titleTime">2018年第5期</span>-->
+      <!--</h4>-->
+      <!--<table border="0"  class="bigTable" cellpadding="0" cellspacing="0">-->
+        <!--<tr>-->
+          <!--<th style="width: 30%;">摘要</th>-->
+          <!--<th style="width: 30%;">会计科目</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<h4>借方金额</h4>-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th>亿</th>-->
+                <!--<th>千</th>-->
+                <!--<th>百</th>-->
+                <!--<th>十</th>-->
+                <!--<th>千</th>-->
+                <!--<th>百</th>-->
+                <!--<th>十</th>-->
+                <!--<th>元</th>-->
+                <!--<th>角</th>-->
+                <!--<th>分</th>-->
+              <!--</tr>-->
+            <!--</table>-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<h4>贷方金额</h4>-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th>亿</th>-->
+                <!--<th>千</th>-->
+                <!--<th>百</th>-->
+                <!--<th>十</th>-->
+                <!--<th>千</th>-->
+                <!--<th>百</th>-->
+                <!--<th>十</th>-->
+                <!--<th>元</th>-->
+                <!--<th>角</th>-->
+                <!--<th>分</th>-->
+              <!--</tr>-->
+            <!--</table>-->
+          <!--</th>-->
+        <!--</tr>-->
+        <!--<tr>-->
+          <!--<th style="width: 30%;">摘要</th>-->
+          <!--<th style="width: 30%;">-->
+            <!--<input class="input" oninput="inputValue(this)" type="text" placeholder="请输入" />-->
+            <!--<ul>-->
+              <!--<li>发放工资1</li>-->
+              <!--<li>是豆腐干</li>-->
+              <!--<li>北方导航假把式</li>-->
+              <!--<li>不弄明白1</li>-->
+              <!--<li>查看是几号拿圣诞节放</li>-->
+              <!--<li>出门VB和耐久性</li>-->
+              <!--<li>成本你还是VB</li>-->
+              <!--<li>不GV十八号是</li>-->
+            <!--</ul>-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0" class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+        <!--</tr>-->
+
+        <!--<tr>-->
+          <!--<th style="width: 30%;">摘要</th>-->
+          <!--<th style="width: 30%;">-->
+            <!--<input class="input" type="text" placeholder="请输入" />-->
+            <!--<ul>-->
+              <!--<li>发放工资</li>-->
+            <!--</ul>-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0" class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+        <!--</tr>-->
+
+
+        <!--<tr>-->
+          <!--<th style="width: 30%;">摘要</th>-->
+          <!--<th style="width: 30%;">-->
+            <!--<input class="input" type="text" placeholder="请输入" />-->
+            <!--<ul>-->
+              <!--<li>发放工资</li>-->
+            <!--</ul>-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0" class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+        <!--</tr>-->
+
+
+
+        <!--<tr>-->
+          <!--<th style="width: 30%;">合计</th>-->
+          <!--<th style="width: 30%;"></th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0" class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+          <!--<th style="width: 20%;">-->
+            <!--<table border="0"  cellpadding="0" cellspacing="0"  class="tableDw">-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+                <!--<th></th>-->
+              <!--</tr>-->
+            <!--</table>-->
+            <!--<input style="display: none;" class="inputs" type="number" placeholder="请输入" />-->
+          <!--</th>-->
+        <!--</tr>-->
+      <!--</table>-->
+      <!--列表-->
+      <div style="overflow: auto;width: 96%;margin: 0 2%;margin-top: 1%;">
+        <table id="atable" class="list" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <th>序号</th>
+            <th>商品名</th>
+            <th>价格</th>
+            <th>评论数</th>
+            <th>已售数</th>
+            <th>图片地址</th>
+            <th>操作</th>
+          </tr>
+          <% items.forEach(function (item) {%>
+          <tr>
+            <th><%=item.goodsId %></th>
+            <th><%=item.goodsName %></th>
+            <th><%=item.price %></th>
+            <th><%=item.pl %></th>
+            <th><%=item.ys %></th>
+            <th><%=item.src %></th>
+            <th class="handleTh">
+              <h4>
+                <span class="lookBtn">查看</span>
+                <span class="updateBtn">修改</span>
+                <span onclick="delPopDiv()" class="delBtn">删除</span>
+                <span class="updateBtn">重置</span>
+                <span class="disableBtn">禁用</span>
+                <span class="disableBtn">禁用</span>
+              </h4>
+            </th>
+          </tr>
+          <%})%>
+        </table>
+
+      </div>
+
+      <div class="fy">
+        <p class="overflow-h">
+          <span class="fl">共100条数据</span>
+          <span class="fl">10条/每页</span>
+          <span class="fr">
+              <i class="pre">上一页</i>
+              <strong>1</strong>
+              <strong>2</strong>
+              <strong>3</strong>
+              <i class="next">下一页</i>
+            </span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="/javascripts/my.js" ></script>
+  <script>
+      tableWchange("bigTable");
+  </script>
+  </body>
+</html>

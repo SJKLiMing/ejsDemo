@@ -1,0 +1,98 @@
+/********************************************************不同分辨率样式********************************************************/
+@media (max-width: 992px) {
+	.left{animation:hideLeft 0.28s; animation-fill-mode:forwards;}
+	.content{width: 100%;animation:showContent 0.28s; animation-fill-mode:forwards;}
+	.header h4{animation:showHeader 0.28s; animation-fill-mode:forwards;position: relative;}
+	.delPopDiv div{margin-left: -150px!important;}
+}
+
+/********************************************************常用样式********************************************************/
+.fl{float: left;}
+.fr{float: right;}
+.overflow-h{overflow: hidden}
+/********************************************************公共样式********************************************************/
+html,body{margin: 0;padding: 0;height: 100%; background: #f5f5f5;}
+h4{margin: 0;}
+.visibility_h{visibility: hidden;}
+.icon_index{background: url(../images/index.png);background-repeat: no-repeat; background-size:17px; background-position-y: 1.25em; background-position-x: 2em;}
+/*左侧*/
+.left{background:black;width: 220px;height: 100%;position: fixed;left: 0;top: 0;z-index: 1001;-webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none;-ms-user-select: none;user-select: none;}
+.left ul{background:#20222A;list-style: none;margin: 0;padding: 0;float: left;font-size: 14px;height: 100%;width: 100%;}
+.left ul li{text-align: center;color: rgba(255,255,255,.7);cursor: pointer;}
+.left ul li span{display: block; padding: 18px 0;position: relative;overflow: hidden;}
+.left ul li span em{position: absolute;left: 0;height: 100%;width: 5px;top: 0; margin: 0; background: #009688;display: none;}
+.left ul li:hover em{display: block;}
+.left ul li div span:hover{color: white;}
+.left ul li span strong{float: left; margin-left: 30%;}
+.left ul li i{background: url(../images/downOrup.png); padding: 10px; background-size: cover; position: absolute; right: 8%; background-size: 23px; background-position-y: -10px; background-repeat: no-repeat; padding: 10px; position: absolute; right: 8%;}
+.left ul li div{display: none;background: rgba(0,0,0,.5)!important;}
+.left ul li div span{padding: 13px 0;color: rgba(255,255,255,.7);}
+.left ul li div i{display: none;}
+.leftSelect{background: rgb(33,119,165);}
+.leftTitle{background:#20222A;height: 49px;line-height: 49px;text-align: center;color: white;color: rgba(255,255,255,.8);margin-bottom: 4px;}
+/*头部*/
+.header{width: 100%; height: 49px; background: white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);position: fixed;top: 0;left: 0;z-index: 1000;}
+.header h4{margin-left: 240px;height: 49px;}
+.header h4 img{margin-top: 13px;width: 20px;cursor: pointer;}
+/*内容区块*/
+.content{position: absolute; width: auto; right: 20px;left: 240px;top: 70px;padding: 1% 0;background: white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);}
+/*分页样式*/
+.fy{width: 96%;margin: 0 2%;margin-top: 1%;}
+.fy p{font-size: 14px;margin: 0;}
+.fy p span.fr strong{cursor: pointer;background: #20222A;color: white;width: 20px;display: inline-block;text-align: center;border-radius:3px;}
+.fy p span.fr strong:active{opacity: .9}
+.fy p span.fr i{font-style: normal;cursor: pointer;}
+.fy p span.fr i:hover{text-decoration: underline}
+.fy p span.fr i.pre{ margin-right: 5px;}
+.fy p span.fr i.next{ margin-left: 5px;}
+/********************************************************Table列表********************************************************/
+.list{border-top:1px solid #e6e6e6; border-left:1px solid #e6e6e6;width: 100%;}
+.list tr:first-child{background: #f2f2f2;}
+.list th{text-overflow: ellipsis;overflow: hidden;min-width: 100px;font-weight: normal;font-size:14px;border-bottom:1px solid #e6e6e6;border-right:1px solid #e6e6e6;height: 45px;}
+.updateBtn{display: inline-block; height: 25px; line-height: 25px; padding: 0 9px;background-color: #009688;color: #fff; white-space: nowrap; text-align: center;font-size: 12px; border: none; border-radius: 2px; cursor: pointer;}
+.updateBtn:hover{opacity: .9;}
+.delBtn{display: inline-block; height: 25px; line-height: 25px; padding: 0 9px;background-color: #FF5722;color: #fff; white-space: nowrap; text-align: center;font-size: 12px; border: none; border-radius: 2px; cursor: pointer;}
+.delBtn:hover{opacity: .9;}
+.lookBtn{border: 1px solid #C9C9C9; background-color: #fff;color: #555;display: inline-block; height: 25px; line-height: 25px; padding: 0 9px;background-color: white;white-space: nowrap; text-align: center;font-size: 12px; border-radius: 2px; cursor: pointer;}
+.lookBtn:hover{border: 1px solid #009688;}
+.disableBtn{display: inline-block; height: 25px; line-height: 25px; padding: 0 9px;background-color: #999;color: #fff; white-space: nowrap; text-align: center;font-size: 12px; border: none; border-radius: 2px; cursor: pointer;}
+.disableBtn:hover{opacity: .9;}
+.handleTh{min-width: 300px!important;}
+/********************************************************弹窗********************************************************/
+/*删除*/
+.delPopDiv{position: fixed;height: 100%;width: 100%;background: rgba(0,0,0,.5);left: 0;top: 0;z-index: 9999;}
+.delPopDiv div{position: absolute; width: 300px; height: 150px; background: white; left: 50%; margin-left: 0px; top: 50%; margin-top: -75px; box-shadow: 0px 1px 5px rgba(0,0,0,.5); border-radius: 5px;}
+.delPopDiv div h5{position: absolute; bottom: 0;width: 100%;text-align: center;}
+.delPopDiv div h5 span{margin: 0 8px;padding: 6px 18px;}
+.delPopDiv div .delTitle{text-align: center;height: 65px;line-height: 65px;}
+
+/********************************************************弹窗END********************************************************/
+
+/**/
+#pageOne .title{text-align: center;font-weight: normal; margin-bottom: 1%;}
+#pageOne .title .titleName{font-size: 24px;}
+#pageOne .title .titleTime{font-size: 12px;}
+#pageOne .bigTable{border: 1px solid #888888;width: 96%; margin: 0 2%;}
+#pageOne .bigTable tr th{font-size: 14px;position: relative;}
+#pageOne .bigTable tr th h4{border-bottom: 1px solid #888888;font-size: 12px;}
+#pageOne .bigTable tr th h4:last-child{border-bottom: none;}
+#pageOne .bigTable tr th h4 span{float: left;width:8.76%;text-align: center;border-right:1px solid #888;}
+#pageOne .bigTable tr th h4 span:last-child{border-right:none ;}
+#pageOne .bigTable tr th{border-bottom: 1px solid #888; border-right:1px solid #888;font-weight: normal;}
+#pageOne .bigTable tr th:last-child{border-right:none;}
+#pageOne .bigTable tr:last-child th{border-bottom:none;}
+#pageOne .bigTable tr:last-child th:first-child{border-right: none;}
+
+#pageOne .tableDw{width: 100%;}
+#pageOne .tableDw tr:last-child th:first-child{border-right:1px solid #888}
+#pageOne .tableDw tr th{font-size: 12px;border-spacing: 0;width: 10%;border-right: 1px solid #eee!important;}
+#pageOne .tableDw tr th:nth-child(3){border-right:1px solid rgb(168,211,232)!important;}
+#pageOne .tableDw tr th:nth-child(6){border-right:1px solid rgb(168,211,232)!important;}
+#pageOne .tableDw tr th:nth-child(8){border-right:1px solid rgb(236,193,193)!important;}
+#pageOne .bigTable tr:not(:first-child) .tableDw th{height: 100px;line-height: 100px;font-weight: bolder;}
+
+#pageOne table .input{border: none;width: 89%; height: 98px;padding: 0 5%;}
+#pageOne table .inputs{border: none;width: 89%; height: 98px;outline: none;padding: 0 5%;}
+#pageOne table ul{box-shadow: 0px 4px 4px rgba(0,0,0,.1);max-height: 308px;overflow: auto;display: none;position: absolute; list-style: none;margin: 0; padding: 0; background: deepskyblue; width: 100%; z-index: 999;}
+#pageOne table ul li{height: 45px; line-height: 45px;color: white;border-bottom: 1px solid rgba(255,255,255,.4);}
+#pageOne{height: 100%;}
